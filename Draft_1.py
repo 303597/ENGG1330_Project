@@ -2744,7 +2744,7 @@ def diningtable(time, face, hand):
                         tmp_there.remove("vegetables")
                         tmp_cut.append("vegetables")
                 elif "seafood" in move:
-                    print("What kind of seafood do I want to cut or dissect? (Fish/Shrimp/Lobster/Starfish/Crab/Molluscs)")
+                    print("What kind of seafood do I want to cut or dissect? (Fish/Shrimp/Lobster/Crab/Molluscs)")
                     choice=input("> ")
                     choice=choice.lower()
                     if choice not in tmp_there:
@@ -2773,7 +2773,7 @@ def diningtable(time, face, hand):
                 else:
                     ft=0
                     for a in tmp_there:
-                        if a in move.split():
+                        if a in move:
                             print(f"I dissected the {a}.")
                             tmp_there.remove(a)
                             tmp_cut.append(a)
